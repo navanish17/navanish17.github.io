@@ -1,80 +1,70 @@
-<!--
-  Portfolio template (single-file)
-  Instructions:
-  1) Replace every "REPLACE_..." placeholder with your content (name, role, email, links).
-  2) For project demos: replace REPLACE_LIVE_LINK / REPLACE_GITHUB_LINK.
-  3) To embed Loom/YouTube, replace the iframe src (see PROJECTS section).
-  4) Contact form uses Formspree: sign up at https://formspree.io/, get your form endpoint and replace "REPLACE_FORMSPREE_ENDPOINT".
-  5) Add images by creating folder /assets/img/ and update src attributes.
--->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>REPLACE_NAME — AI Consultant & Data Scientist</title>
-  <meta name="description" content="REPLACE_NAME — AI Consultant for Real Estate & Clinics. Projects, demos, and book-a-demo." />
+  <title>Navanish Pandey — AI Generalist</title>
+  <meta name="description" content="Navanish Pandey — AI Generalist Portfolio. Projects, demos, and contact." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: linear-gradient(135deg,#071226 0%, #071022 70%);
-      --card: rgba(255,255,255,0.03);
-      --glass: rgba(255,255,255,0.04);
-      --accent: linear-gradient(90deg,#7c5cff,#5ec1ff);
-      --muted: #9fb0c8;
-      --accent-color: #7c5cff;
+      --bg: #ffffff;
+      --card: #f6fefc;
+      --glass: #f0fdf9;
+      --accent: #1b9c85;
+      --muted: #444;
+      --accent-color: #1b9c85;
       --radius: 12px;
-      color-scheme: dark;
+      color-scheme: light;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e8f1fb;background:var(--bg)}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#111;background:var(--bg)}
     a{color:inherit}
     .wrap{max-width:1100px;margin:28px auto;padding:20px}
     header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:18px}
-    .brand{font-weight:700;font-size:18px}
-    nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-size:14px}
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;padding:26px;border-radius:var(--radius);background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);box-shadow:0 10px 40px rgba(2,6,23,0.6)}
+    .brand{font-weight:700;font-size:18px;color:var(--accent-color)}
+    nav a{margin-left:14px;color:var(--accent-color);text-decoration:none;font-size:14px;font-weight:500}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;padding:26px;border-radius:var(--radius);background:var(--glass);box-shadow:0 4px 12px rgba(0,0,0,0.05)}
     .intro small{color:var(--muted);display:block;margin-bottom:8px}
-    .intro h1{margin:0;font-size:34px;line-height:1.05}
+    .intro h1{margin:0;font-size:34px;line-height:1.05;color:var(--accent-color)}
     .intro p{color:var(--muted);margin:14px 0 18px}
-    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent-color);background-image:var(--accent);color:#021424;font-weight:700;text-decoration:none}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent-color);color:#fff;font-weight:700;text-decoration:none}
     .secondary{margin-left:12px;color:var(--muted);font-size:14px}
-    .profile-card{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:12px}
-    .avatar{width:110px;height:110px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;background:linear-gradient(135deg,#7c5cff,#5ec1ff);color:#021424}
+    .profile-card{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    .avatar img{width:110px;height:110px;border-radius:999px;object-fit:cover;border:3px solid var(--accent-color)}
     .meta{color:var(--muted);font-size:13px;text-align:center}
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
-    .service{background:var(--glass);border-radius:12px;padding:14px;min-height:120px;display:flex;flex-direction:column;gap:8px}
-    .service h4{margin:0}
-    .projects{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:10px;display:flex;flex-direction:column;gap:10px;min-height:200px}
-    .project .thumb{height:120px;border-radius:8px;background:#0b1220;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px}
-    .project h3{margin:0;font-size:16px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+    .service{background:var(--card);border-radius:12px;padding:14px;min-height:120px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    .service h4{margin:0;color:var(--accent-color)}
+    .projects{margin-top:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .project{background:var(--card);padding:12px;border-radius:10px;display:flex;flex-direction:column;gap:10px;min-height:200px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+    .project .thumb{height:120px;border-radius:8px;background:#e6f9f4;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;overflow:hidden}
+    .project h3{margin:0;font-size:16px;color:var(--accent-color)}
     .project p{color:var(--muted);margin:0;font-size:14px}
     .project .links{margin-top:auto;font-size:13px}
     .testimonials{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    .testimonial{background:var(--glass);padding:12px;border-radius:10px}
+    .testimonial{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
     .about-contact{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:22px}
-    .card{background:var(--card);padding:16px;border-radius:12px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
     footer{text-align:center;color:var(--muted);margin-top:28px;font-size:13px}
     .muted{color:var(--muted)}
-    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
-    form button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent-color);background-image:var(--accent);color:#021424;font-weight:700}
+    form input, form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;background:#fff;color:#111}
+    form button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent-color);color:#fff;font-weight:700;cursor:pointer}
     @media (max-width:980px){
       .hero{grid-template-columns:1fr; padding:18px}
-      .services{grid-template-columns:repeat(2,1fr)}
-      .projects{grid-template-columns:repeat(2,1fr)}
       .about-contact{grid-template-columns:1fr}
     }
     @media (max-width:560px){
       .services{grid-template-columns:1fr}
       .projects{grid-template-columns:1fr}
+      .testimonials{grid-template-columns:1fr}
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">REPLACE_NAME</div>
+      <div class="brand">Navanish Pandey</div>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -88,9 +78,9 @@
       <div>
         <div class="intro">
           <small>Hi — I’m</small>
-          <h1>REPLACE_NAME <span style="color:var(--accent-color)">• REPLACE_ROLE</span></h1>
-          <p>REPLACE_SHORT — e.g. "I build AI assistants & forecasting models for real estate and clinics. I help SMBs save time and increase revenue."</p>
-          <a class="cta" href="mailto:REPLACE_EMAIL?subject=Book%20a%20Free%20Demo">Book Free Demo</a>
+          <h1>Navanish Pandey <span style="color:var(--accent-color)">• AI Generalist</span></h1>
+          <p>I build AI-powered tools, models, and assistants to help solve business and real-world challenges.</p>
+          <a class="cta" href="mailto:navanishpandey17@gmail.com?subject=Book%20a%20Free%20Demo">Book Free Demo</a>
           <a class="secondary" href="#projects">See work →</a>
         </div>
 
@@ -115,14 +105,14 @@
       </div>
 
       <aside class="profile-card">
-        <div class="avatar">RE</div>
+        <div class="avatar"><img src="assets/img/profile.jpg" alt="Navanish Pandey" /></div>
         <div style="text-align:center">
-          <div style="font-weight:700">REPLACE_NAME</div>
-          <div class="meta">REPLACE_LOCATION • <a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a></div>
+          <div style="font-weight:700">Navanish Pandey</div>
+          <div class="meta">India • <a href="mailto:navanishpandey17@gmail.com">navanishpandey17@gmail.com</a></div>
         </div>
         <div style="width:100%;margin-top:6px;display:flex;gap:8px">
-          <a class="cta" href="mailto:REPLACE_EMAIL?subject=Book%20a%20Free%20Demo" style="flex:1;text-align:center">Book Demo</a>
-          <a class="secondary" href="REPLACE_LINKEDIN" target="_blank" rel="noopener" style="display:inline-block;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.03);text-decoration:none">LinkedIn</a>
+          <a class="cta" href="mailto:navanishpandey17@gmail.com?subject=Book%20a%20Free%20Demo" style="flex:1;text-align:center">Book Demo</a>
+          <a class="secondary" href="https://www.linkedin.com/in/navanish" target="_blank" rel="noopener" style="display:inline-block;padding:10px;border-radius:8px;background:transparent;border:1px solid #ccc;text-decoration:none">LinkedIn</a>
         </div>
       </aside>
     </section>
@@ -130,7 +120,7 @@
     <!-- PROJECTS -->
     <section id="projects" style="margin-top:22px">
       <div style="display:flex;justify-content:space-between;align-items:center">
-        <h2 style="margin:0">Selected Projects</h2>
+        <h2 style="margin:0;color:var(--accent-color)">Selected Projects</h2>
         <div class="muted">Live demos & code</div>
       </div>
 
@@ -138,17 +128,13 @@
         <!-- Project 1 -->
         <div class="project">
           <div class="thumb">
-            <!-- Replace with image path or screenshot -->
             <img src="assets/img/project1.png" alt="project 1" style="width:100%;height:100%;object-fit:cover;border-radius:8px;display:block" onerror="this.style.display='none'">
-            <div style="padding:12px;color:var(--muted)">Project 1 screenshot</div>
           </div>
           <h3>Real Estate AI Assistant</h3>
           <p class="muted">Conversational assistant for lead capture, property details and auto follow-ups.</p>
           <div class="links">
             <a href="REPLACE_GITHUB_LINK" target="_blank" rel="noopener">Code</a> ·
             <a href="REPLACE_LIVE_LINK" target="_blank" rel="noopener">Live demo</a>
-            <!-- Example embed: Loom/YouTube iframe (replace src) -->
-            <!-- <iframe src="https://www.loom.com/embed/REPLACE_LOOM_ID" style="width:100%;height:150px;border:0;border-radius:8px;margin-top:8px"></iframe> -->
           </div>
         </div>
 
@@ -156,7 +142,6 @@
         <div class="project">
           <div class="thumb">
             <img src="assets/img/project2.png" alt="project 2" style="width:100%;height:100%;object-fit:cover;border-radius:8px;display:block" onerror="this.style.display='none'">
-            <div style="padding:12px;color:var(--muted)">Project 2 screenshot</div>
           </div>
           <h3>Clinic Assistant (NLP)</h3>
           <p class="muted">Appointment automation + feedback analysis (demo + Loom walkthrough).</p>
@@ -170,7 +155,6 @@
         <div class="project">
           <div class="thumb">
             <img src="assets/img/project3.png" alt="project 3" style="width:100%;height:100%;object-fit:cover;border-radius:8px;display:block" onerror="this.style.display='none'">
-            <div style="padding:12px;color:var(--muted)">Project 3 screenshot</div>
           </div>
           <h3>Flagship: Price Prediction</h3>
           <p class="muted">Time-series price forecasting model with a Streamlit demo and model card.</p>
@@ -184,7 +168,7 @@
 
     <!-- TESTIMONIALS -->
     <section style="margin-top:24px">
-      <h2 style="margin:0 0 8px 0">Testimonials</h2>
+      <h2 style="margin:0 0 8px 0;color:var(--accent-color)">Testimonials</h2>
       <div class="testimonials">
         <div class="testimonial">
           <strong>Friend / Beta user</strong>
@@ -201,17 +185,17 @@
     <section id="about" class="about-contact">
       <div>
         <div class="card">
-          <h3>About</h3>
-          <p class="muted">REPLACE_ABOUT — 2–3 lines explaining your background (CDAC, focus on ML + finance + consulting, and side-hustle work).</p>
+          <h3 style="color:var(--accent-color)">About</h3>
+          <p class="muted">AI Generalist passionate about building scalable AI systems in Finance and beyond. Skilled in ML, time-series forecasting, and model deployment.</p>
           <ul class="muted">
-            <li>CDAC student — strong on ML, time-series, and model deployment</li>
-            <li>Side-hustle: AI assistants for local SMBs (Realtors & Clinics)</li>
+            <li>CDAC student — focus on ML, time-series, and deployment</li>
+            <li>Side-hustle: AI assistants for SMBs (Realtors & Clinics)</li>
             <li>Tech: Python, Pandas, Scikit-learn, Streamlit, HuggingFace, Flask</li>
           </ul>
         </div>
 
         <div style="margin-top:16px" class="card">
-          <h3>How I work (short)</h3>
+          <h3 style="color:var(--accent-color)">How I work</h3>
           <ol class="muted">
             <li>Understand client pain points → quick audit (free)</li>
             <li>Deliver 1-week MVP (demo + report)</li>
@@ -222,10 +206,9 @@
 
       <aside>
         <div class="card">
-          <h3 id="contact">Contact & Bookings</h3>
+          <h3 id="contact" style="color:var(--accent-color)">Contact & Bookings</h3>
           <p class="muted">Book a free 15-min demo or drop a message</p>
 
-          <!-- Replace with your Formspree action OR use mailto fallback -->
           <form action="https://formspree.io/f/REPLACE_FORMSPREE_ENDPOINT" method="POST">
             <label class="muted">Name</label>
             <input type="text" name="name" required placeholder="Your name">
@@ -236,7 +219,7 @@
             <input type="hidden" name="_subject" value="New demo request">
             <div style="display:flex;gap:8px;margin-top:10px">
               <button type="submit">Send Message</button>
-              <a class="secondary" href="mailto:REPLACE_EMAIL?subject=Book%20a%20Free%20Demo">Email</a>
+              <a class="secondary" href="mailto:navanishpandey17@gmail.com?subject=Book%20a%20Free%20Demo">Email</a>
             </div>
           </form>
 
@@ -248,7 +231,7 @@
     </section>
 
     <footer>
-      © <span id="year"></span> REPLACE_NAME • Built for clients & employers • <a href="https://github.com/REPLACE_GITHUB" target="_blank">GitHub</a>
+      © <span id="year"></span> Navanish Pandey • Built for clients & employers • <a href="https://github.com/REPLACE_GITHUB" target="_blank">GitHub</a>
     </footer>
   </div>
 
