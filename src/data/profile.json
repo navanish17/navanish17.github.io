@@ -1,21 +1,21 @@
 {
-  "name": "Your Name",
-  "title": "Software Developer & Researcher",
-  "tagline": "Building elegant solutions to complex problems",
-  "email": "your.email@example.com",
-  "location": "City, Country",
-  "avatar": "/placeholder.svg",
+  "name": "Navanish Pandey",
+  "title": "Applied AI Engineer",
+  "tagline": "Engineer with a research mindset, experienced in model development, optimization, and deployment",
+  "email": "navnishpande17@gmail.com",
+  "location": "Mumbai, India",
+  "avatar": "/orange_back.png",
   "bio": "I'm a passionate developer focused on creating meaningful digital experiences. With a background in computer science and a love for clean code, I enjoy tackling challenging problems and turning ideas into reality. When I'm not coding, you'll find me exploring new technologies, reading research papers, or contributing to open-source projects.",
   "social": {
-    "github": "https://github.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourusername",
+    "github": "https://github.com/navanish17",
+    "linkedin": "https://linkedin.com/in/navanish",
     "twitter": "https://twitter.com/yourusername"
   },
   "skills": {
-    "languages": ["JavaScript", "TypeScript", "Python", "Go", "Rust"],
-    "frameworks": ["React", "Next.js", "Node.js", "FastAPI", "TailwindCSS"],
-    "tools": ["Git", "Docker", "AWS", "PostgreSQL", "Redis"],
-    "other": ["System Design", "Machine Learning", "Technical Writing"]
+    "languages": ["Python", "Java"],
+    "frameworks": ["TensorFlow", "PyTorch", "Scikit-learn", "FastAPI", "MLflow"],
+    "tools": ["Git", "Docker", "AWS", "SQL", "LangChain", "LangGraph"],
+    "other": ["System Design", "Machine Learning", "Deep Learning", "GenAI", "Mlops", "Technical Writing"]
   },
   "projects": [
     {
