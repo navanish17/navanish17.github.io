@@ -81,28 +81,12 @@ const Hero = () => {
 
           {/* Right side - Profile Photo */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2 opacity-0 animate-fade-up stagger-2">
-            <div className="relative">
-              {/* Decorative ring */}
-              <div className="absolute -inset-4 border-2 border-primary/20 rounded-2xl rotate-3" />
-              <div className="absolute -inset-8 border border-primary/10 rounded-3xl -rotate-2 hidden sm:block" />
-              
-              {/* Photo container */}
-              <div className="relative w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden bg-muted">
-                <img
-                  src={profileData.avatar}
-                  alt={profileData.name}
-                  className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-500"
-                />
-                {/* Orange overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
-              </div>
-              
-              {/* Accent dots */}
-              <div className="absolute -bottom-4 -right-4 flex gap-2">
-                <div className="w-3 h-3 bg-primary rounded-full" />
-                <div className="w-3 h-3 bg-primary/50 rounded-full" />
-                <div className="w-3 h-3 bg-primary/25 rounded-full" />
-              </div>
+            <div className="relative w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-xl overflow-hidden border border-primary/20 shadow-lg">
+              <img
+                src={profileData.avatar}
+                alt={profileData.name}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
