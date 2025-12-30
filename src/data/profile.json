@@ -1,0 +1,78 @@
+{
+  "name": "Your Name",
+  "title": "Software Developer & Researcher",
+  "tagline": "Building elegant solutions to complex problems",
+  "email": "your.email@example.com",
+  "location": "City, Country",
+  "avatar": "/placeholder.svg",
+  "bio": "I'm a passionate developer focused on creating meaningful digital experiences. With a background in computer science and a love for clean code, I enjoy tackling challenging problems and turning ideas into reality. When I'm not coding, you'll find me exploring new technologies, reading research papers, or contributing to open-source projects.",
+  "social": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "https://twitter.com/yourusername"
+  },
+  "skills": {
+    "languages": ["JavaScript", "TypeScript", "Python", "Go", "Rust"],
+    "frameworks": ["React", "Next.js", "Node.js", "FastAPI", "TailwindCSS"],
+    "tools": ["Git", "Docker", "AWS", "PostgreSQL", "Redis"],
+    "other": ["System Design", "Machine Learning", "Technical Writing"]
+  },
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Project Alpha",
+      "description": "A full-stack application that solves a real-world problem with elegant design and robust architecture.",
+      "image": "/placeholder.svg",
+      "tech": ["React", "Node.js", "PostgreSQL"],
+      "liveUrl": "https://project-alpha.demo",
+      "githubUrl": "https://github.com/yourusername/project-alpha",
+      "featured": true
+    },
+    {
+      "id": "project-2",
+      "title": "Project Beta",
+      "description": "An open-source tool that helps developers streamline their workflow and boost productivity.",
+      "image": "/placeholder.svg",
+      "tech": ["TypeScript", "Go", "Docker"],
+      "liveUrl": "https://project-beta.demo",
+      "githubUrl": "https://github.com/yourusername/project-beta",
+      "featured": true
+    },
+    {
+      "id": "project-3",
+      "title": "Project Gamma",
+      "description": "A machine learning project exploring innovative approaches to natural language processing.",
+      "image": "/placeholder.svg",
+      "tech": ["Python", "TensorFlow", "FastAPI"],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/yourusername/project-gamma",
+      "featured": false
+    }
+  ],
+  "blogs": [
+    {
+      "id": "understanding-react-hooks",
+      "title": "Understanding React Hooks: A Deep Dive",
+      "date": "2024-01-15",
+      "excerpt": "Exploring the internals of React hooks and how they revolutionized state management in functional components.",
+      "tags": ["React", "JavaScript", "Web Development"],
+      "readTime": "8 min read"
+    },
+    {
+      "id": "building-scalable-systems",
+      "title": "Building Scalable Systems: Lessons Learned",
+      "date": "2024-01-08",
+      "excerpt": "Key insights from designing and implementing systems that handle millions of requests per day.",
+      "tags": ["System Design", "Architecture", "Backend"],
+      "readTime": "12 min read"
+    },
+    {
+      "id": "future-of-ai-development",
+      "title": "The Future of AI in Software Development",
+      "date": "2024-01-01",
+      "excerpt": "How artificial intelligence is transforming the way we write, test, and deploy code.",
+      "tags": ["AI", "Machine Learning", "Future Tech"],
+      "readTime": "10 min read"
+    }
+  ]
+}
