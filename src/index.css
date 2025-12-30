@@ -4,87 +4,97 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Minimalist Design System */
+/* Modern Orange Minimalist Design System */
 
 @layer base {
   :root {
-    --background: 30 20% 99%;
-    --foreground: 20 14% 10%;
+    --background: 30 30% 98%;
+    --foreground: 20 20% 12%;
 
-    --card: 30 15% 98%;
-    --card-foreground: 20 14% 10%;
+    --card: 30 25% 97%;
+    --card-foreground: 20 20% 12%;
 
-    --popover: 30 15% 98%;
-    --popover-foreground: 20 14% 10%;
+    --popover: 30 25% 97%;
+    --popover-foreground: 20 20% 12%;
 
-    --primary: 20 14% 10%;
-    --primary-foreground: 30 20% 99%;
+    --primary: 24 90% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 20% 95%;
-    --secondary-foreground: 20 14% 10%;
+    --secondary: 28 30% 93%;
+    --secondary-foreground: 20 20% 12%;
 
-    --muted: 30 15% 94%;
-    --muted-foreground: 20 10% 45%;
+    --muted: 28 25% 92%;
+    --muted-foreground: 20 15% 40%;
 
-    --accent: 25 95% 55%;
-    --accent-foreground: 20 14% 10%;
+    --accent: 24 95% 52%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 30 20% 99%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 25 15% 88%;
-    --input: 25 15% 88%;
-    --ring: 20 14% 10%;
+    --border: 28 20% 85%;
+    --input: 28 20% 85%;
+    --ring: 24 90% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     /* Custom tokens */
     --font-display: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
     
     /* Orange gradient tokens */
-    --gradient-orange-soft: radial-gradient(ellipse at 80% 20%, hsl(25 100% 95% / 0.6) 0%, transparent 50%);
-    --gradient-orange-accent: radial-gradient(ellipse at 20% 80%, hsl(30 90% 92% / 0.4) 0%, transparent 40%);
-    --gradient-subtle: linear-gradient(135deg, hsl(30 15% 96%) 0%, hsl(30 20% 99%) 100%);
-    --shadow-soft: 0 4px 20px -4px hsl(25 30% 30% / 0.08);
-    --shadow-hover: 0 8px 30px -6px hsl(25 30% 30% / 0.12);
+    --gradient-orange-hero: radial-gradient(ellipse 120% 80% at 85% 10%, hsl(24 100% 92% / 0.8) 0%, hsl(30 80% 95% / 0.4) 40%, transparent 70%);
+    --gradient-orange-accent: radial-gradient(ellipse 80% 60% at 10% 90%, hsl(28 90% 90% / 0.5) 0%, transparent 50%);
+    --gradient-orange-mid: radial-gradient(ellipse 60% 40% at 50% 50%, hsl(26 85% 94% / 0.3) 0%, transparent 60%);
+    --gradient-card-hover: linear-gradient(135deg, hsl(24 95% 95%) 0%, hsl(30 60% 98%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(30 25% 97%) 0%, hsl(30 30% 98%) 100%);
+    
+    --shadow-soft: 0 4px 24px -8px hsl(24 50% 30% / 0.1);
+    --shadow-hover: 0 12px 40px -12px hsl(24 80% 45% / 0.25);
+    --shadow-card: 0 2px 12px -4px hsl(24 40% 30% / 0.08);
+    --shadow-glow: 0 0 30px -5px hsl(24 95% 55% / 0.3);
   }
 
   .dark {
-    --background: 20 20% 6%;
-    --foreground: 30 15% 96%;
+    --background: 20 25% 5%;
+    --foreground: 30 20% 95%;
 
-    --card: 20 18% 10%;
-    --card-foreground: 30 15% 96%;
+    --card: 20 22% 9%;
+    --card-foreground: 30 20% 95%;
 
-    --popover: 20 18% 10%;
-    --popover-foreground: 30 15% 96%;
+    --popover: 20 22% 9%;
+    --popover-foreground: 30 20% 95%;
 
-    --primary: 30 15% 96%;
-    --primary-foreground: 20 20% 6%;
+    --primary: 24 90% 55%;
+    --primary-foreground: 20 25% 5%;
 
-    --secondary: 20 15% 14%;
-    --secondary-foreground: 30 15% 96%;
+    --secondary: 20 20% 12%;
+    --secondary-foreground: 30 20% 95%;
 
-    --muted: 20 15% 14%;
-    --muted-foreground: 30 12% 55%;
+    --muted: 20 20% 14%;
+    --muted-foreground: 30 15% 55%;
 
-    --accent: 25 90% 58%;
-    --accent-foreground: 20 20% 6%;
+    --accent: 24 90% 58%;
+    --accent-foreground: 20 25% 5%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 30 15% 96%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 30 20% 95%;
 
-    --border: 20 15% 18%;
-    --input: 20 15% 18%;
-    --ring: 30 15% 96%;
+    --border: 20 18% 16%;
+    --input: 20 18% 16%;
+    --ring: 24 90% 55%;
     
     /* Orange gradient tokens for dark mode */
-    --gradient-orange-soft: radial-gradient(ellipse at 80% 20%, hsl(25 80% 25% / 0.3) 0%, transparent 50%);
-    --gradient-orange-accent: radial-gradient(ellipse at 20% 80%, hsl(30 70% 20% / 0.25) 0%, transparent 40%);
-    --gradient-subtle: linear-gradient(135deg, hsl(20 15% 10%) 0%, hsl(20 20% 6%) 100%);
-    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.4);
-    --shadow-hover: 0 8px 30px -6px hsl(0 0% 0% / 0.5);
+    --gradient-orange-hero: radial-gradient(ellipse 120% 80% at 85% 10%, hsl(24 80% 20% / 0.5) 0%, hsl(28 70% 15% / 0.3) 40%, transparent 70%);
+    --gradient-orange-accent: radial-gradient(ellipse 80% 60% at 10% 90%, hsl(28 75% 18% / 0.4) 0%, transparent 50%);
+    --gradient-orange-mid: radial-gradient(ellipse 60% 40% at 50% 50%, hsl(26 70% 15% / 0.2) 0%, transparent 60%);
+    --gradient-card-hover: linear-gradient(135deg, hsl(24 50% 12%) 0%, hsl(20 30% 10%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(20 22% 8%) 0%, hsl(20 25% 5%) 100%);
+    
+    --shadow-soft: 0 4px 24px -8px hsl(0 0% 0% / 0.4);
+    --shadow-hover: 0 12px 40px -12px hsl(24 80% 30% / 0.4);
+    --shadow-card: 0 2px 12px -4px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 30px -5px hsl(24 90% 50% / 0.25);
   }
 }
 
@@ -113,6 +123,32 @@
     background-image: linear-gradient(135deg, hsl(var(--foreground)) 0%, hsl(var(--muted-foreground)) 100%);
   }
 
+  .text-gradient-orange {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(24 95% 60%) 100%);
+  }
+
+  .card-interactive {
+    @apply relative bg-card rounded-xl border border-border/60 transition-all duration-300 ease-out overflow-hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-interactive::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: var(--gradient-card-hover);
+  }
+
+  .card-interactive:hover {
+    @apply border-primary/30;
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+  }
+
+  .card-interactive:hover::before {
+    @apply opacity-100;
+  }
+
   .card-hover {
     @apply transition-all duration-300 ease-out;
     box-shadow: var(--shadow-soft);
@@ -129,7 +165,7 @@
 
   .link-underline::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-full h-px bg-foreground scale-x-0 origin-right transition-transform duration-300;
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 origin-right transition-transform duration-300;
   }
 
   .link-underline:hover::after {
@@ -137,7 +173,7 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-32;
+    @apply py-24 md:py-32;
   }
 
   .container-narrow {
@@ -146,6 +182,39 @@
 
   .container-wide {
     @apply max-w-6xl mx-auto px-6;
+  }
+
+  .section-divider {
+    @apply w-12 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full;
+  }
+
+  .badge-orange {
+    @apply px-3 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium border border-primary/20 transition-all duration-200;
+  }
+
+  .badge-orange:hover {
+    @apply bg-primary/20 border-primary/30;
+  }
+
+  .skill-tag {
+    @apply px-4 py-2 bg-secondary rounded-lg text-sm font-medium text-secondary-foreground border border-border/50 transition-all duration-200;
+  }
+
+  .skill-tag:hover {
+    @apply bg-primary text-primary-foreground border-primary;
+    box-shadow: var(--shadow-glow);
+  }
+
+  .icon-button {
+    @apply p-3 rounded-lg text-muted-foreground transition-all duration-200;
+  }
+
+  .icon-button:hover {
+    @apply bg-primary/10 text-primary;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-primary;
   }
 }
 
