@@ -10,14 +10,18 @@ import Footer from '@/components/Footer';
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Subtle orange gradient accents */}
+      {/* Layered orange gradient background */}
       <div 
         className="fixed inset-0 pointer-events-none"
-        style={{ background: 'var(--gradient-orange-soft)' }}
+        style={{ background: 'var(--gradient-orange-hero)' }}
       />
       <div 
         className="fixed inset-0 pointer-events-none"
         style={{ background: 'var(--gradient-orange-accent)' }}
+      />
+      <div 
+        className="fixed inset-0 pointer-events-none"
+        style={{ background: 'var(--gradient-orange-mid)' }}
       />
       
       <Navigation />
