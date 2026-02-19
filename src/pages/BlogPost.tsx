@@ -1,3 +1,4 @@
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
@@ -112,11 +113,34 @@ const BlogPost = () => {
                     {children}
                   </h3>
                 ),
-                p: ({ children }) => (
-                  <p className="text-foreground/90 leading-relaxed mb-4">
-                    {children}
-                  </p>
-                ),
+                p: ({ children }) => {
+                  // If the paragraph contains only a single <a> element, render as a CTA button
+                  const childArray = Array.isArray(children) ? children : [children];
+                  const onlyLink =
+                    childArray.length === 1 &&
+                    typeof childArray[0] === 'object' &&
+                    (childArray[0] as React.ReactElement)?.type === 'a';
+                  if (onlyLink) {
+                    const link = childArray[0] as React.ReactElement;
+                    return (
+                      <div className="my-6">
+                        <a
+                          href={link.props.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
+                        >
+                          {link.props.children}
+                        </a>
+                      </div>
+                    );
+                  }
+                  return (
+                    <p className="text-foreground/90 leading-relaxed mb-4">
+                      {children}
+                    </p>
+                  );
+                },
                 ul: ({ children }) => (
                   <ul className="list-disc list-inside space-y-2 mb-4 text-foreground/90">
                     {children}

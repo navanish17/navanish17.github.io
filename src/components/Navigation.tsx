@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -12,6 +13,8 @@ const navLinks = [
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,13 +24,14 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isSolid = !isHomePage || isScrolled;
+
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/90 backdrop-blur-lg border-b border-primary/10 shadow-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isSolid
+          ? 'bg-background/95 backdrop-blur-lg border-b border-primary/10 shadow-sm'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="container-wide">
         <div className="flex items-center justify-between h-16 md:h-20">
