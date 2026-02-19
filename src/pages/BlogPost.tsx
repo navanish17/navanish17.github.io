@@ -10,11 +10,13 @@ import Footer from '@/components/Footer';
 import understandingReactHooks from '@/content/blogs/understanding-react-hooks.md?raw';
 import buildingScalableSystems from '@/content/blogs/building-scalable-systems.md?raw';
 import futureOfAiDevelopment from '@/content/blogs/future-of-ai-development.md?raw';
+import myFirstBlog from '@/content/blogs/my-first-blog.md?raw';
 
 const blogContentMap: Record<string, string> = {
   'understanding-react-hooks': understandingReactHooks,
   'building-scalable-systems': buildingScalableSystems,
   'future-of-ai-development': futureOfAiDevelopment,
+  'my-first-blog': myFirstBlog,
 };
 
 const BlogPost = () => {

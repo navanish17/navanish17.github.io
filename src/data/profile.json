@@ -73,6 +73,14 @@
       "excerpt": "How artificial intelligence is transforming the way we write, test, and deploy code.",
       "tags": ["AI", "Machine Learning", "Future Tech"],
       "readTime": "10 min read"
+    },
+    {
+      "id": "my-first-blog",
+      "title": "Documenting My Journey: My First Applied AI Blog",
+      "date": "2026-02-16",
+      "excerpt": "A reflection on the importance of technical blogging and my journey as an Applied AI Engineer.",
+      "tags": ["AI", "Applied AI", "Blogging", "Career"],
+      "readTime": "5 min read"
     }
   ]
 }
