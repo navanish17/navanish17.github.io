@@ -2,18 +2,18 @@
   "name": "Navanish Pandey",
   "title": "Applied AI Engineer",
   "tagline": "Engineer with a research mindset, experienced in model development, optimization, and deployment",
-  "email": "navnishpande17@gmail.com",
+  "email": "navanishpandey17@gmail.com",
   "location": "Mumbai, India",
   "avatar": "/orange_back.png",
-  "bio": "I'm a passionate developer focused on creating meaningful digital experiences. With a background in computer science and a love for clean code, I enjoy tackling challenging problems and turning ideas into reality. When I'm not coding, you'll find me exploring new technologies, reading research papers, or contributing to open-source projects.",
+  "bio": "I’m an AI/ML Engineer passionate about building real-world GenAI systems and intelligent products that solve meaningful problems. I specialize in Machine Learning, Deep Learning, and transformer-based architectures, with hands-on experience developing multi-agent AI platforms and scalable ML backends. My journey from Mechanical Engineering to Artificial Intelligence reflects strong analytical thinking and continuous learning. I enjoy turning complex AI concepts into practical applications — from custom language models to computer vision systems. Currently, I’m focused on creating impactful AI solutions at the intersection of data, automation, and innovation.",
   "social": {
     "github": "https://github.com/navanish17",
-    "linkedin": "https://linkedin.com/in/navanish",
-    "twitter": "https://twitter.com/yourusername"
+    "linkedin": "https://linkedin.com/in/navanish"
   },
   "skills": {
     "languages": [
       "Python",
+      "SQL",
       "Java"
     ],
     "frameworks": [
