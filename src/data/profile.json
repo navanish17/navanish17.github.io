@@ -112,18 +112,6 @@
       "readTime": "8 min read"
     },
     {
-      "id": "building-scalable-systems",
-      "title": "Building Scalable Systems: Lessons Learned",
-      "date": "2024-01-08",
-      "excerpt": "Key insights from designing and implementing systems that handle millions of requests per day.",
-      "tags": [
-        "System Design",
-        "Architecture",
-        "Backend"
-      ],
-      "readTime": "12 min read"
-    },
-    {
       "id": "future-of-ai-development",
       "title": "The Future of AI in Software Development",
       "date": "2024-01-01",
