@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { Badge } from '@/components/ui/badge';
 import profileData from '@/data/profile.json';
 import Navigation from '@/components/Navigation';
@@ -20,10 +21,17 @@ const blogContentMap: Record<string, string> = {
   'my-first-blog': myFirstBlog,
 };
 
+const calcReadTime = (text: string) => {
+  const words = text.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return `${minutes} min read`;
+};
+
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
   const post = profileData.blogs.find((b) => b.id === id);
   const content = id ? blogContentMap[id] : null;
+  const readTime = content ? calcReadTime(content) : post?.readTime;
 
   if (!post || !content) {
     return (
@@ -79,7 +87,7 @@ const BlogPost = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Clock size={16} />
-                {post.readTime}
+                {readTime}
               </div>
             </div>
 
@@ -97,6 +105,7 @@ const BlogPost = () => {
         <section className="section-padding">
           <article className="container-narrow prose prose-lg max-w-none">
             <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
               components={{
                 h1: ({ children }) => (
                   <h1 className="font-display text-3xl font-bold mt-12 mb-6 first:mt-0">
@@ -186,6 +195,26 @@ const BlogPost = () => {
                   >
                     {children}
                   </a>
+                ),
+                table: ({ children }) => (
+                  <div className="overflow-x-auto my-6">
+                    <table className="w-full text-sm border-collapse">{children}</table>
+                  </div>
+                ),
+                thead: ({ children }) => (
+                  <thead className="bg-secondary text-foreground">{children}</thead>
+                ),
+                tbody: ({ children }) => (
+                  <tbody className="divide-y divide-border">{children}</tbody>
+                ),
+                tr: ({ children }) => (
+                  <tr className="hover:bg-secondary/50 transition-colors">{children}</tr>
+                ),
+                th: ({ children }) => (
+                  <th className="px-4 py-3 text-left font-semibold border border-border">{children}</th>
+                ),
+                td: ({ children }) => (
+                  <td className="px-4 py-3 border border-border text-foreground/80">{children}</td>
                 ),
               }}
             >
