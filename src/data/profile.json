@@ -42,6 +42,23 @@
   },
   "projects": [
     {
+      "id": "ai-career-pilot",
+      "title": "AI Career Pilot",
+      "description": "A full-stack AI career guidance platform for Indian students. Built with a LangGraph multi-agent chatbot, fine-tuned DistilBERT for intent classification, RAG-based knowledge retrieval, and a React + FastAPI stack deployed via Docker and GitHub Actions CI/CD.",
+      "image": "/placeholder.svg",
+      "tech": [
+        "LangGraph",
+        "DistilBERT",
+        "FastAPI",
+        "React",
+        "ChromaDB",
+        "Docker"
+      ],
+      "liveUrl": "https://www.linkedin.com/posts/navanish_cdac-activity-7427166398705045504-9Nlg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACiEyEEB1c79atMF9F0FVLvN6iW6INSxX8U",
+      "githubUrl": "https://github.com/navanish17/ai_career_pilot",
+      "featured": true
+    },
+    {
       "id": "project-1",
       "title": "Project Alpha",
       "description": "A full-stack application that solves a real-world problem with elegant design and robust architecture.",
