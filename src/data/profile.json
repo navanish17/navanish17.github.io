@@ -12,10 +12,33 @@
     "twitter": "https://twitter.com/yourusername"
   },
   "skills": {
-    "languages": ["Python", "Java"],
-    "frameworks": ["TensorFlow", "PyTorch", "Scikit-learn", "FastAPI", "MLflow"],
-    "tools": ["Git", "Docker", "AWS", "SQL", "LangChain", "LangGraph"],
-    "other": ["System Design", "Machine Learning", "Deep Learning", "GenAI", "Mlops", "Technical Writing"]
+    "languages": [
+      "Python",
+      "Java"
+    ],
+    "frameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "FastAPI",
+      "MLflow"
+    ],
+    "tools": [
+      "Git",
+      "Docker",
+      "AWS",
+      "SQL",
+      "LangChain",
+      "LangGraph"
+    ],
+    "other": [
+      "System Design",
+      "Machine Learning",
+      "Deep Learning",
+      "GenAI",
+      "Mlops",
+      "Technical Writing"
+    ]
   },
   "projects": [
     {
@@ -23,7 +46,11 @@
       "title": "Project Alpha",
       "description": "A full-stack application that solves a real-world problem with elegant design and robust architecture.",
       "image": "/placeholder.svg",
-      "tech": ["React", "Node.js", "PostgreSQL"],
+      "tech": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
       "liveUrl": "https://project-alpha.demo",
       "githubUrl": "https://github.com/yourusername/project-alpha",
       "featured": true
@@ -33,7 +60,11 @@
       "title": "Project Beta",
       "description": "An open-source tool that helps developers streamline their workflow and boost productivity.",
       "image": "/placeholder.svg",
-      "tech": ["TypeScript", "Go", "Docker"],
+      "tech": [
+        "TypeScript",
+        "Go",
+        "Docker"
+      ],
       "liveUrl": "https://project-beta.demo",
       "githubUrl": "https://github.com/yourusername/project-beta",
       "featured": true
@@ -43,7 +74,11 @@
       "title": "Project Gamma",
       "description": "A machine learning project exploring innovative approaches to natural language processing.",
       "image": "/placeholder.svg",
-      "tech": ["Python", "TensorFlow", "FastAPI"],
+      "tech": [
+        "Python",
+        "TensorFlow",
+        "FastAPI"
+      ],
       "liveUrl": "",
       "githubUrl": "https://github.com/yourusername/project-gamma",
       "featured": false
@@ -51,11 +86,29 @@
   ],
   "blogs": [
     {
+      "id": "ai-career-pilot",
+      "title": "AI Career Pilot — How I Built a Full-Stack AI Career Guidance System",
+      "date": "2026-02-19",
+      "excerpt": "How I built a multi-agent LangGraph chatbot, fine-tuned DistilBERT for intent classification, and deployed the whole thing with Docker + GitHub Actions CI/CD.",
+      "tags": [
+        "AI",
+        "LangGraph",
+        "FastAPI",
+        "React",
+        "MLOps"
+      ],
+      "readTime": "15 min read"
+    },
+    {
       "id": "understanding-react-hooks",
       "title": "Understanding React Hooks: A Deep Dive",
       "date": "2024-01-15",
       "excerpt": "Exploring the internals of React hooks and how they revolutionized state management in functional components.",
-      "tags": ["React", "JavaScript", "Web Development"],
+      "tags": [
+        "React",
+        "JavaScript",
+        "Web Development"
+      ],
       "readTime": "8 min read"
     },
     {
@@ -63,7 +116,11 @@
       "title": "Building Scalable Systems: Lessons Learned",
       "date": "2024-01-08",
       "excerpt": "Key insights from designing and implementing systems that handle millions of requests per day.",
-      "tags": ["System Design", "Architecture", "Backend"],
+      "tags": [
+        "System Design",
+        "Architecture",
+        "Backend"
+      ],
       "readTime": "12 min read"
     },
     {
@@ -71,7 +128,11 @@
       "title": "The Future of AI in Software Development",
       "date": "2024-01-01",
       "excerpt": "How artificial intelligence is transforming the way we write, test, and deploy code.",
-      "tags": ["AI", "Machine Learning", "Future Tech"],
+      "tags": [
+        "AI",
+        "Machine Learning",
+        "Future Tech"
+      ],
       "readTime": "10 min read"
     },
     {
@@ -79,7 +140,12 @@
       "title": "Documenting My Journey: My First Applied AI Blog",
       "date": "2026-02-16",
       "excerpt": "A reflection on the importance of technical blogging and my journey as an Applied AI Engineer.",
-      "tags": ["AI", "Applied AI", "Blogging", "Career"],
+      "tags": [
+        "AI",
+        "Applied AI",
+        "Blogging",
+        "Career"
+      ],
       "readTime": "5 min read"
     }
   ]

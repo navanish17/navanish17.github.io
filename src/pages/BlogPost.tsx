@@ -11,8 +11,10 @@ import understandingReactHooks from '@/content/blogs/understanding-react-hooks.m
 import buildingScalableSystems from '@/content/blogs/building-scalable-systems.md?raw';
 import futureOfAiDevelopment from '@/content/blogs/future-of-ai-development.md?raw';
 import myFirstBlog from '@/content/blogs/my-first-blog.md?raw';
+import aiCareerPilot from '@/content/blogs/ai_career_pilot.md?raw';
 
 const blogContentMap: Record<string, string> = {
+  'ai-career-pilot': aiCareerPilot,
   'understanding-react-hooks': understandingReactHooks,
   'building-scalable-systems': buildingScalableSystems,
   'future-of-ai-development': futureOfAiDevelopment,
