@@ -59,6 +59,22 @@
       "featured": true
     },
     {
+      "id": "slms-from-scratch",
+      "title": "SLMs From Scratch",
+      "description": "Built a 30-million parameter Small Language Model from scratch using pure PyTorch — no pretrained weights, no fine-tuning. Implemented the full transformer architecture (causal self-attention, MLP, LayerNorm), trained on the TinyStories dataset with a warmup + cosine LR schedule, gradient accumulation, and mixed precision. Achieved a cross-entropy loss of 2.39 in ~20 minutes on a single GPU.",
+      "image": "/placeholder.svg",
+      "tech": [
+        "PyTorch",
+        "Transformers",
+        "tiktoken",
+        "NLP",
+        "CUDA"
+      ],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/navanish17/SLMs/tree/main",
+      "featured": true
+    },
+    {
       "id": "project-1",
       "title": "Project Alpha",
       "description": "A full-stack application that solves a real-world problem with elegant design and robust architecture.",
