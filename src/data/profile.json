@@ -129,16 +129,18 @@
       "readTime": "8 min read"
     },
     {
-      "id": "future-of-ai-development",
-      "title": "The Future of AI in Software Development",
-      "date": "2024-01-01",
-      "excerpt": "How artificial intelligence is transforming the way we write, test, and deploy code.",
+      "id": "building-slms-from-scratch",
+      "title": "I Built a Language Model From Scratch — And Here's Everything I Learned",
+      "date": "2026-02-20",
+      "excerpt": "A no-fluff, code-to-output guide to building your own 30-million parameter Small Language Model from pure math and PyTorch — no pretrained weights, no fine-tuning.",
       "tags": [
-        "AI",
-        "Machine Learning",
-        "Future Tech"
+        "NLP",
+        "PyTorch",
+        "Deep Learning",
+        "Transformers",
+        "LLM"
       ],
-      "readTime": "10 min read"
+      "readTime": "18 min read"
     },
     {
       "id": "my-first-blog",

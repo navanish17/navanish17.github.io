@@ -10,14 +10,14 @@ import Footer from '@/components/Footer';
 
 // Import blog content
 import understandingReactHooks from '@/content/blogs/understanding-react-hooks.md?raw';
-import futureOfAiDevelopment from '@/content/blogs/future-of-ai-development.md?raw';
 import myFirstBlog from '@/content/blogs/my-first-blog.md?raw';
 import aiCareerPilot from '@/content/blogs/ai_career_pilot.md?raw';
+import slms from '@/content/blogs/SLMs.md?raw';
 
 const blogContentMap: Record<string, string> = {
   'ai-career-pilot': aiCareerPilot,
+  'building-slms-from-scratch': slms,
   'understanding-react-hooks': understandingReactHooks,
-  'future-of-ai-development': futureOfAiDevelopment,
   'my-first-blog': myFirstBlog,
 };
 
